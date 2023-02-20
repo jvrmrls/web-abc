@@ -54,8 +54,8 @@ const style = {
     alignItems: 'center',
     justifyContent: 'center',
     backgroundImage: {
-      xs: 'url(/images/WEB-ABC-2023-2.png)',
-      md: 'url(/images/WEB-ABC-2023-1.png)',
+      xs: 'url(/images/WEB-ABC-2.png)',
+      md: 'url(/images/WEB-ABC-1.png)',
     },
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
@@ -66,7 +66,7 @@ const style = {
   },
   btnWhatsapp: {
     position: 'absolute',
-    bottom: { xs: '250px', md: '185px', lg: '330px' },
+    bottom: { xs: '230px', md: '175px', lg: '310px' },
     fontFamily: 'Fieldwork',
     textTransform: 'none',
     fontSize: { xs: '16px', md: '20px', lg: '40px' },
@@ -76,7 +76,7 @@ const style = {
   },
   containerSocial: {
     position: 'absolute',
-    bottom: { xs: '215px', md: '145px', lg: '270px' },
+    bottom: { xs: '190px', md: '135px', lg: '260px' },
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
