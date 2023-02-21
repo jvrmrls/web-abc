@@ -3,7 +3,7 @@ import { Box, Button, Typography } from '@mui/material';
 export default function TemporalPage() {
   const handleClick = () => {
     window.open(
-      'https://api.whatsapp.com/message/5FCXM2MCRSMPM1?autoload=1&app_absent=0',
+      'https://wa.me/message/5FCXM2MCRSMPM1',
       '_blank',
     );
   };
