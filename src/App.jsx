@@ -1,9 +1,10 @@
-import { useState } from 'react';
-import Button from '@mui/material/Button';
-import RouterRoutes from '#/router/RouterRoutes.jsx';
-
+import Router from '#/router';
 function App() {
-  return <RouterRoutes />;
+  return (
+    <>
+      <Router />
+    </>
+  );
 }
 
 export default App;

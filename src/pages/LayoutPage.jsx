@@ -1,18 +1,27 @@
-import { Box, Button } from '@mui/material';
 import { Outlet } from 'react-router-dom';
+import TopBarContainer from '#/components/shared/topbar/TopBarContainer.jsx';
 
-export default function LayoutPage() {
+const LayoutPage = () => {
   return (
     <>
-      {/* <Box component="header" sx={{ flexGrow: 1 }}>
-        <Box sx={{ flexGrow: 1 }}>
-          <Button color="inherit">Home</Button>
-          <Button color="inherit">Login</Button>
-        </Box>
-      </Box> */}
-      {/* <Box component="main" sx={{ flexGrow: 1 }}> */}
-      <Outlet />
-      {/* </Box> */}
+      <header>
+        <TopBarContainer />
+      </header>
+      <main style={style.main}>
+        <Outlet />
+      </main>
+      <footer>
+        <p>footer</p>
+      </footer>
     </>
   );
-}
+};
+
+const style = {
+  main: {
+    marginTop: '70px',
+    marginBottom: '60px'
+  }
+};
+
+export default LayoutPage;
