@@ -1,26 +1,27 @@
 import { Outlet } from 'react-router-dom';
-import TopBarContainer from '#/components/shared/topbar/TopBarContainer.jsx';
+// import TopBarContainer from '#/components/shared/topbar/TopBarContainer.jsx';
+// import FooterComponent from '#/components/shared/bottombar/FooterComponent.jsx';
 
 const LayoutPage = () => {
   return (
     <>
-      <header>
+      {/* <header>
         <TopBarContainer />
-      </header>
+      </header> */}
       <main style={style.main}>
         <Outlet />
       </main>
-      <footer>
-        <p>footer</p>
-      </footer>
+      {/* <footer>
+        <FooterComponent />
+      </footer> */}
     </>
   );
 };
 
 const style = {
   main: {
-    marginTop: '70px',
-    marginBottom: '60px'
+    // marginTop: '70px',
+    // marginBottom: '60px'
   }
 };
 
