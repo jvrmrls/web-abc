@@ -1,28 +1,23 @@
-import { Outlet } from 'react-router-dom';
-// import TopBarContainer from '#/components/shared/topbar/TopBarContainer.jsx';
-// import FooterComponent from '#/components/shared/bottombar/FooterComponent.jsx';
+import DynamicImport from '#/utils/DynamicImport.jsx';
 
 const LayoutPage = () => {
+  const HomePage = () => (
+    <DynamicImport load={() => import('#/pages/HomePage.jsx')}>
+      {Component => (Component === null ? <></> : <Component />)}
+    </DynamicImport>
+  );
+
   return (
     <>
-      {/* <header>
-        <TopBarContainer />
-      </header> */}
       <main style={style.main}>
-        <Outlet />
+        <HomePage />
       </main>
-      {/* <footer>
-        <FooterComponent />
-      </footer> */}
     </>
   );
 };
 
 const style = {
-  main: {
-    // marginTop: '70px',
-    // marginBottom: '60px'
-  }
+  main: {}
 };
 
 export default LayoutPage;
