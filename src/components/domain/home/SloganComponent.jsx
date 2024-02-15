@@ -1,25 +1,29 @@
 import Box from '@mui/material/Box';
 import AttachedWord from '#/components/shared/AttachedWord';
+import comillasImage from '#/assets/comillas.png';
 
 function SloganComponent() {
   return (
     <Box
       sx={style.container}
-      className='flex flex-col justify-between  items-center gap-16 py-12 h-max w-full lg:h-[550px]'
+      className="flex flex-col justify-between  items-center gap-10 py-12 h-max w-full lg:h-[550px] relative "
     >
-      <p className='text-center text-lg lg:text-4xl font-semibold leading-3'>
-        &#161;Estamos listos para{' '}
-        <span className='block text-2xl font-black'>retar tus ideas&#33;</span>
+      <img src={comillasImage} alt="comillas"
+           className="absolute top-[-50px] left-[-120px] z-10" />
+      <img src={comillasImage} alt="comillas"
+           className="absolute bottom-[-90px] right-[-120px] z-10 rotate-180" />
+      <p className="text-center text-3xl lg:text-4xl font-black leading-3 mt-2">
+        &#161;Con&oacute;cenos!
       </p>
 
-      <Box className=' flex flex-col gap-6 w-64 lg:w-[500px]'>
-        <p className='text-xs font-semibold lg:text-base leading-3'>
+      <Box className=" flex flex-col gap-4 w-64 lg:w-[500px]">
+        <p className="text-sm font-semibold lg:text-base leading-4">
           A lo largo de este tiempo, hemos trabajado con clientes en diversos
           sectores y hemos tenido la oportunidad de participar en proyectos
           desafiantes.
         </p>
 
-        <p className='text-xs font-semibold lg:text-base leading-3'>
+        <p className="text-sm font-semibold lg:text-base leading-4">
           El arte siempre ha estado presente, por eso al combinar la{' '}
           <AttachedWord>fotograf&iacute;a</AttachedWord> con el{' '}
           <AttachedWord>dise&ntilde;o</AttachedWord> y el{' '}
@@ -27,7 +31,7 @@ function SloganComponent() {
           perspectiva creativa.
         </p>
 
-        <p className='text-xs font-semibold lg:text-base leading-3'>
+        <p className="text-sm font-semibold lg:text-base leading-4">
           Trabajamos con negocios que busquen{' '}
           <AttachedWord> una experiencia visual &uacute;nica</AttachedWord> que
           eleve su propuesta de valor.

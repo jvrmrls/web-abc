@@ -10,6 +10,8 @@ import ServicesComponent from '#/components/domain/home/ServicesComponent.jsx';
 import TeamComponent from '#/components/domain/home/TeamComponent.jsx';
 import ClientsComponent from '#/components/domain/home/ClientsComponent.jsx';
 import FooterComponent from '#/components/domain/home/FooterComponent.jsx';
+import MissionVissionComponent
+  from '#/components/domain/home/MissionVissionComponent.jsx';
 
 const HomePage = () => {
   // const ui = useUIState();
@@ -22,6 +24,7 @@ const HomePage = () => {
     <Container sx={style.container}>
       <CompanyComponent />
       <SloganComponent />
+      <MissionVissionComponent />
       <OurOwnsVerticalComponent />
       <OurOwnsGridComponent />
       <MeetComponent />
