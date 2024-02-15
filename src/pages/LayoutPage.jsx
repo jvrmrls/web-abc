@@ -17,7 +17,9 @@ const LayoutPage = () => {
 };
 
 const style = {
-  main: {}
+  main: {
+    overflow: 'hidden',
+  }
 };
 
 export default LayoutPage;
