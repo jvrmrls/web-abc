@@ -26,7 +26,7 @@ const HomePage = () => {
       <SloganComponent />
       <MissionVissionComponent />
       <OurOwnsVerticalComponent />
-      <OurOwnsGridComponent />
+      {/*<OurOwnsGridComponent />*/}
       <MeetComponent />
       <ServicesComponent />
       <ClientsComponent />

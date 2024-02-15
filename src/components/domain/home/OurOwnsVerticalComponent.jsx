@@ -1,7 +1,6 @@
 import Box from '@mui/material/Box';
 import spaceImage from '#/assets/╓CONO.png';
 import flechaImage from '#/assets/╓CONO-FLECHA.png';
-import AttachedWord from '#/components/shared/AttachedWord.jsx';
 function OurOwnsVerticalComponent() {
   return (
     <>
@@ -18,7 +17,7 @@ function OurOwnsVerticalComponent() {
         <img
           src={spaceImage}
           alt="space"
-          className="absolute bottom-[-35px] left-[20px] w-[120px]  z-10"
+          className="absolute bottom-[-80px] left-[-80px] w-[250px]  z-10 opacity-70"
         />
       </Box>
       <Box
@@ -29,11 +28,11 @@ function OurOwnsVerticalComponent() {
           Reels
         </p>
         <Box className={'w-full flex flex-row justify-center items-center gap-2 h-full relative'}>
-          <img src={flechaImage} className={'w-[120px] h-[60px] absolute left-[-30px] rotate-180'} />
+          <img src={flechaImage} className={'w-[40px] h-[40px] absolute left-[12px]'} />
           <Box
             sx={style?.content}
           />
-          <img src={flechaImage} className={'w-[120px] h-[60px] absolute right-[-30px]'} />
+          <img src={flechaImage} className={'w-[40px] h-[40px] absolute right-[12px] rotate-180'} />
         </Box>
       </Box>
       <Box
@@ -46,12 +45,12 @@ function OurOwnsVerticalComponent() {
         <Box
           className={'w-full flex flex-row justify-center items-center gap-2 h-full relative'}>
           <img src={flechaImage}
-               className={'w-[120px] h-[60px] absolute left-[-30px] rotate-180'} />
+               className={'w-[40px] h-[40px] absolute left-[12px]'} />
           <Box
             sx={style?.content2}
           />
           <img src={flechaImage}
-               className={'w-[120px] h-[60px] absolute right-[-30px]'} />
+               className={'w-[40px] h-[40px] absolute right-[12px] rotate-180'} />
         </Box>
       </Box>
       <Box
@@ -64,12 +63,12 @@ function OurOwnsVerticalComponent() {
         <Box
           className={'w-full flex flex-row justify-center items-center gap-2 h-full relative'}>
           <img src={flechaImage}
-               className={'w-[120px] h-[60px] absolute left-[-30px] rotate-180'} />
+               className={'w-[40px] h-[40px] absolute left-[12px]'} />
           <Box
             sx={{ ...style?.content2, bgcolor: '#ffe9d7'}}
           />
           <img src={flechaImage}
-               className={'w-[120px] h-[60px] absolute right-[-30px]'} />
+               className={'w-[40px] h-[40px] absolute right-[12px] rotate-180'} />
         </Box>
       </Box>
       <Box
@@ -82,22 +81,15 @@ function OurOwnsVerticalComponent() {
         <Box
           className={'w-full flex flex-row justify-center items-center gap-2 h-full relative'}>
           <img src={flechaImage}
-               className={'w-[120px] h-[60px] absolute left-[-30px] rotate-180'} />
+               className={'w-[40px] h-[40px] absolute left-[12px]'} />
           <Box
             sx={style?.content3}
           />
           <img src={flechaImage}
-               className={'w-[120px] h-[60px] absolute right-[-30px]'} />
+               className={'w-[40px] h-[40px] absolute right-[12px] rotate-180'} />
         </Box>
       </Box>
-      <Box sx={style.containerMeeting}
-        className='flex flex-col justify-center  items-center gap-16 py-8 h-[140px] w-full lg:h-[300px]'
-      >
-          <Box component={"p"} sx={{ backgroundColor: '#222936', color: '#ffe9d7' }}
-            className="text-center text-xl lg:text-2xl font-extrabold leading-3 py-3 px-4 rounded-md">
-            &#191; Agendamos una reuni&oacute;n &#63;
-          </Box>
-      </Box>
+
     </>
   );
 }

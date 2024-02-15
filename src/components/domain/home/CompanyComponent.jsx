@@ -17,7 +17,7 @@ function CompanyComponent() {
       <img
         src={spaceImage}
         alt='space'
-        className='absolute bottom-[-50px] w-[180px] rotate-180 z-10'
+        className='absolute bottom-[-15px] right-[0px] w-[180px] rotate-180 z-10 opacity-70'
         />
     </Box>
   );
@@ -30,8 +30,8 @@ const style = {
       'linear-gradient(to bottom left, #f3456b 0 2%, #b188ee 90% 100%)'
   },
   divider: {
-    width: '40%',
-    minWidth: "200px",
+    width: '30%',
+    minWidth: "150px",
     height: '3px',
     backgroundColor: 'white'
   }

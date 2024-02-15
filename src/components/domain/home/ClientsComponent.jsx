@@ -24,7 +24,7 @@ const style = {
     backgroundColor: '#ffe9d7'
   },
   subcontainer: {
-    backgroundColor: '#b188ee'
+    backgroundColor: '#f3456b'
   },
   button: {
     backgroundColor: '#222936',

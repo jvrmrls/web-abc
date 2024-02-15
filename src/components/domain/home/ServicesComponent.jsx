@@ -1,19 +1,35 @@
 import Box from '@mui/material/Box';
+import fondo9 from '#/assets/FONDO-9.png';
+import flechaImage from '#/assets/╓CONO-FLECHA2.png';
 
 function ServicesComponent() {
   return (
     <Box
       sx={style.container}
-      className='flex flex-col justify-between  items-center gap-16 py-8 h-max w-full lg:h-[550px]'
+      className="flex flex-col justify-between  items-center gap-8 py-8 aspect-square w-full lg:h-[550px]"
     >
-      <p className='text-center text-base lg:text-2xl font-bold leading-4'>
+      <p
+        className="text-center text-2xl lg:text-2xl font-medium leading-8 text-white ">
         Conoce nuestros{' '}
-        <span className='block font-black text-2xl leading-6 uppercase lg:text-6xl'>
+        <span
+          className="block font-black text-4xl leading-6 uppercase lg:text-6xl">
           servicios
         </span>
       </p>
-      <Box></Box>
-      <Box sx={style.button} className='font-black tracking-wider text-lg'>
+      <Box className={"w-full flex items-center justify-center"}>
+        <Box
+          sx={{ backgroundColor: '#ffe9d7', aspectRatio: '2/3' }}
+          className={'w-2/4 rounded-2xl relative flex justify-center items-center'}
+        >
+          <img src={flechaImage}
+               className={'w-[40px] h-[40px] absolute left-[-60px]'} />
+
+          <img src={flechaImage}
+               className={'w-[40px] h-[40px] absolute right-[-60px] rotate-180'} />
+
+        </Box>
+      </Box>
+      <Box sx={style.button} className="font-black  text-3xl">
         &#161;Cotiza hoy&#33;
       </Box>
     </Box>
@@ -22,12 +38,15 @@ function ServicesComponent() {
 
 const style = {
   container: {
-    backgroundColor: '#ffe9d7'
+    background: `url(${fondo9})`,
+    backgroundSize: 'contain',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'repeat'
   },
   button: {
-    backgroundColor: '#222936',
-    color: '#ffe9d7',
-    padding: '8px 24px',
+    backgroundColor: 'white',
+    color: '#222936',
+    padding: '12px 32px',
     borderRadius: '8px'
   }
 };
