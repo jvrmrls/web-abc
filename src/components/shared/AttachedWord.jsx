@@ -1,13 +1,13 @@
-function AttachedWord({ children }) {
+function AttachedWord({ children, bgcolor = "#ffbe37", color = null }) {
   return (
-    <span className='' style={style}>
+    <span className='' style={{
+      backgroundColor: bgcolor,
+      color: color || 'auto'
+    }}>
       {children}
     </span>
   );
 }
 
-const style = {
-  backgroundColor: '#ffbe37'
-};
 
 export default AttachedWord;
