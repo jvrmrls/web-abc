@@ -6,87 +6,93 @@ function OurOwnsVerticalComponent() {
     <>
       <Box
         sx={style.containerSmallText}
-        className='flex flex-col justify-center items-center relative'
+        className='flex flex-col justify-center items-center relative lg:min-h-[20vh]'
       >
-        <p className='text-center text-base font-semibold lg:text-lg'>
+        <p className='text-center text-lg font-semibold lg:text-2xl'>
           Conoce nuestro{' '}
-          <span className='block font-black text-4xl leading-6 lg:text-6xl'>
+          <span className='block font-black text-6xl lg:text-7xl lg:leading-3' style={{lineHeight: '0.8'}}>
           trabajo
         </span>
         </p>
         <img
           src={spaceImage}
           alt="space"
-          className="absolute bottom-[-80px] left-[-80px] w-[250px]  z-10 opacity-70"
+          className="absolute bottom-[-80px] left-[-80px] w-[250px]  z-10 opacity-70 lg:w-[400px] lg:bottom-[-120px] lg:left-[250px]"
         />
       </Box>
       <Box
-        sx={style.container}
-        className='flex flex-col justify-center items-center gap-2 py-16 h-max w-full lg:h-[550px]'
+        sx={{backgroundColor: '#b188ee'}}
+        className='flex flex-col justify-center items-center gap-2 py-16 h-[80vh] min-h-[550px] max-h-[750px] w-full lg:h-[100vh]
+                    lg:max-h-[800px] lg:min-h-[600px]'
       >
         <p className='text-center font-black text-4xl leading-6 lg:text-6xl'>
           Reels
         </p>
-        <Box className={'w-full flex flex-row justify-center items-center gap-2 h-full relative'}>
-          <img src={flechaImage} className={'w-[40px] h-[40px] absolute left-[12px]'} />
+        <Box className={'w-full flex flex-row justify-center items-center gap-2 h-full relative lg:max-w-[600px]'}>
+          <img src={flechaImage} className={'w-[32px] h-[32px] absolute left-[12px] lg:w-[64px] lg:h-[64px]'} />
           <Box
             sx={style?.content}
           />
-          <img src={flechaImage} className={'w-[40px] h-[40px] absolute right-[12px] rotate-180'} />
+          <img src={flechaImage} className={'w-[32px] h-[32px] absolute right-[12px] rotate-180 lg:w-[64px] lg:h-[64px]'} />
         </Box>
       </Box>
       <Box
-        sx={style.container2}
-        className='flex flex-col justify-center items-center gap-6 py-16 h-max w-full lg:h-[550px]'
+        sx={{backgroundColor: '#ffe9d7'}}
+        className='flex flex-col justify-center items-center gap-6 py-16 h-[60vh] min-h-[480px] max-h-[650px] w-full lg:h-[100vh]
+                   lg:max-h-[800px] lg:min-h-[600px]'
       >
         <p className='text-center font-black text-3xl leading-6 lg:text-6xl'>
           Fotograf&iacute;a Publicitaria
         </p>
         <Box
-          className={'w-full flex flex-row justify-center items-center gap-2 h-full relative'}>
+          className={'w-full flex flex-row justify-center items-center gap-2 h-full relative  lg:max-w-[600px]'}>
           <img src={flechaImage}
-               className={'w-[40px] h-[40px] absolute left-[12px]'} />
+               className={'w-[32px] h-[32px] absolute left-[12px] lg:w-[64px] lg:h-[64px]'} />
           <Box
-            sx={style?.content2}
+            sx={style?.content2} className={"h-[90%]"}
           />
           <img src={flechaImage}
-               className={'w-[40px] h-[40px] absolute right-[12px] rotate-180'} />
+               className={'w-[32px] h-[32px] absolute right-[12px] rotate-180 lg:w-[64px] lg:h-[64px]'} />
         </Box>
       </Box>
       <Box
-        sx={{ ...style.container2, bgcolor: '#ffbe37' }}
-        className='flex flex-col justify-center items-center gap-6 py-16 h-max w-full lg:h-[550px]'
+        sx={{ bgcolor: '#ffbe37' }}
+        className='flex flex-col justify-center items-center gap-6 py-16 h-[60vh] min-h-[480px] max-h-[650px] w-full lg:h-[100vh]
+                   lg:max-h-[800px] lg:min-h-[600px]'
       >
         <p className='text-center font-black text-3xl leading-6 lg:text-6xl'>
           Fotograf&iacute;a Social
         </p>
         <Box
-          className={'w-full flex flex-row justify-center items-center gap-2 h-full relative'}>
+          className={'w-full flex flex-row justify-center items-center gap-2 h-full relative  lg:max-w-[600px]'}>
           <img src={flechaImage}
-               className={'w-[40px] h-[40px] absolute left-[12px]'} />
+               className={'w-[32px] h-[32px] absolute left-[12px] lg:w-[64px] lg:h-[64px]'} />
           <Box
             sx={{ ...style?.content2, bgcolor: '#ffe9d7'}}
+            className={'h-[90%]'}
           />
           <img src={flechaImage}
-               className={'w-[40px] h-[40px] absolute right-[12px] rotate-180'} />
+               className={'w-[32px] h-[32px] absolute right-[12px] rotate-180 lg:w-[64px] lg:h-[64px]'} />
         </Box>
       </Box>
       <Box
-        sx={style.container3}
-        className='flex flex-col justify-center items-center gap-6 py-16 h-max w-full lg:h-[550px]'
+        sx={{ backgroundColor: '#f3456b'}}
+        className='flex flex-col justify-center items-center gap-6 py-16 h-[30vh] min-h-[280px] max-h-[550px] w-full lg:h-[70vh]
+                   lg:max-h-[800px] lg:min-h-[600px]'
       >
         <p className='text-center font-black text-3xl leading-6 lg:text-6xl'>
           Producci&oacute;n Audiovisual
         </p>
         <Box
-          className={'w-full flex flex-row justify-center items-center gap-2 h-full relative'}>
+          className={'w-full flex flex-row justify-center items-center gap-2 h-full relative  lg:max-w-[900px]'}>
           <img src={flechaImage}
-               className={'w-[40px] h-[40px] absolute left-[12px]'} />
+               className={'w-[32px] h-[32px] absolute left-[12px] lg:w-[64px] lg:h-[64px]'} />
           <Box
             sx={style?.content3}
+            className={"w-[70%]"}
           />
           <img src={flechaImage}
-               className={'w-[40px] h-[40px] absolute right-[12px] rotate-180'} />
+               className={'w-[32px] h-[32px] absolute right-[12px] rotate-180 lg:w-[64px] lg:h-[64px]'} />
         </Box>
       </Box>
 
@@ -96,24 +102,12 @@ function OurOwnsVerticalComponent() {
 
 const style = {
   container: {
-    height: '80vh',
-    minHeight: '550px',
-    maxHeight: '750px',
-    width: '100%',
     backgroundColor: '#b188ee'
   },
   container2: {
-    height: '60vh',
-    minHeight: '480px',
-    maxHeight: '650px',
-    width: '100%',
     backgroundColor: '#ffe9d7'
   },
   container3: {
-    height: '30vh',
-    minHeight: '250px',
-    maxHeight: '520px',
-    width: '100%',
     backgroundColor: '#f3456b'
   },
   containerMeeting: {
@@ -131,12 +125,10 @@ const style = {
   },
   content2: {
     aspectRatio: '3/4',
-    width: '70%',
     backgroundColor: '#222936'
   },
   content3:{
     aspectRatio: '16/9',
-    width: '70%',
     backgroundColor: '#ffe9d7'
   }
 };

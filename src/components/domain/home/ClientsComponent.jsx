@@ -7,9 +7,9 @@ function ClientsComponent() {
       className='flex flex-row justify-between  items-center  h-[220px] w-full lg:h-[550px]'
     >
       <Box className='h-full w-1/2 px-6 flex justify-center items-center'>
-        <p className='text-sm font-semibold leading-4'>
+        <p className='text-sm font-semibold leading-4 lg:text-2xl'>
           Estas son algunas marcas que han
-          <span className='block font-black text-xl leading-5'>
+          <span className='block font-black text-xl leading-5 lg:text-5xl'>
             confiado en nosotros.
           </span>
         </p>

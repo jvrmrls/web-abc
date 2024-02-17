@@ -6,7 +6,7 @@ function ServicesComponent() {
   return (
     <Box
       sx={style.container}
-      className="flex flex-col justify-between  items-center gap-8 py-8 aspect-square w-full lg:h-[550px]"
+      className="flex flex-col justify-between  items-center gap-8 py-8 aspect-square w-full h-[50vh] min-h-[400px] max-h-[600px] lg:h-[80vh] lg:min-h-[700px] lg:max-h-[900px]"
     >
       <p
         className="text-center text-2xl lg:text-2xl font-medium leading-8 text-white ">
@@ -16,16 +16,16 @@ function ServicesComponent() {
           servicios
         </span>
       </p>
-      <Box className={"w-full flex items-center justify-center"}>
+      <Box className={"w-full flex items-center justify-center h-full"}>
         <Box
           sx={{ backgroundColor: '#ffe9d7', aspectRatio: '2/3' }}
-          className={'w-2/4 rounded-2xl relative flex justify-center items-center'}
+          className={'h-[100%] rounded-2xl relative flex justify-center items-center'}
         >
           <img src={flechaImage}
-               className={'w-[40px] h-[40px] absolute left-[-60px]'} />
+               className={'w-[32px] h-[32px] absolute left-[-48px]  lg:w-[64px] lg:h-[64px] lg:left-[-100px]'} />
 
           <img src={flechaImage}
-               className={'w-[40px] h-[40px] absolute right-[-60px] rotate-180'} />
+               className={'w-[32px] h-[32px] absolute right-[-48px] rotate-180  lg:w-[64px] lg:h-[64px]  lg:right-[-100px]'} />
 
         </Box>
       </Box>
