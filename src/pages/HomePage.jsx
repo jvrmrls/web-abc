@@ -12,6 +12,8 @@ import ClientsComponent from '#/components/domain/home/ClientsComponent.jsx';
 import FooterComponent from '#/components/domain/home/FooterComponent.jsx';
 import MissionVissionComponent
   from '#/components/domain/home/MissionVissionComponent.jsx';
+import TopBarDesktopContainer
+  from '#/components/domain/home/others/TopBarDesktopContainer.jsx';
 
 const HomePage = () => {
   // const ui = useUIState();
@@ -22,6 +24,7 @@ const HomePage = () => {
 
   return (
     <Container sx={style.container}>
+      <TopBarDesktopContainer />
       <CompanyComponent />
       <SloganComponent />
       <MissionVissionComponent />

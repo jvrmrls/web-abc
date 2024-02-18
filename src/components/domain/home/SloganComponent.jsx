@@ -6,7 +6,8 @@ function SloganComponent() {
   return (
     <Box
       sx={style.container}
-      className="flex flex-col justify-center  items-center gap-10 py-12 h-max w-full lg:h-[550px] relative -z-30"
+      id={"Conócenos"}
+      className="flex flex-col justify-center  items-center gap-10 py-12 h-max w-full lg:h-[700px] relative -z-30"
     >
       <img src={comillasImage} alt="comillas"
            className="absolute top-[-50px] left-[-120px] lg:left-[20vw] lg:w-[750px] lg:top-[-120px]" />

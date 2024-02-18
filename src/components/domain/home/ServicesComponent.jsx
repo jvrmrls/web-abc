@@ -1,11 +1,12 @@
 import Box from '@mui/material/Box';
-import fondo9 from '#/assets/FONDO-9.png';
+import fondo9 from '#/assets/FONDO-9.webp';
 import flechaImage from '#/assets/╓CONO-FLECHA2.png';
 
 function ServicesComponent() {
   return (
     <Box
       sx={style.container}
+      id={"Servicios"}
       className="flex flex-col justify-between  items-center gap-8 py-8 aspect-square w-full h-[50vh] min-h-[400px] max-h-[600px] lg:h-[80vh] lg:min-h-[700px] lg:max-h-[900px]"
     >
       <p

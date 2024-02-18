@@ -6,6 +6,7 @@ function OurOwnsVerticalComponent() {
     <>
       <Box
         sx={style.containerSmallText}
+        id={"Nuestro Trabajo"}
         className='flex flex-col justify-center items-center relative lg:min-h-[20vh]'
       >
         <p className='text-center text-lg font-semibold lg:text-2xl'>

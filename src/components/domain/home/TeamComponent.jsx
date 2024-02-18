@@ -4,6 +4,7 @@ function TeamComponent() {
   return (
     <Box
       sx={style.container}
+      id={"Equipo Creativo"}
       className='flex flex-col justify-between  items-center py-6 lg:py-10  min-h-[220px] w-full lg:min-h-[750px]'
     >
       <p className='text-2xl font-bold text-center leading-3 lg:text-6xl lg:leading-10'>
