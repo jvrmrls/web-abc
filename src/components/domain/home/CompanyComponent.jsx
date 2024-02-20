@@ -2,17 +2,21 @@ import Box from '@mui/material/Box';
 import spaceImage from '#/assets/╓CONO.png';
 import TopBarDesktopContainer
   from '#/components/domain/home/others/TopBarDesktopContainer.jsx';
-
+import logoAbc from '#/assets/LOGO-ABC.png'
 function CompanyComponent() {
   return (
     <Box
       sx={style.container}
-      className='flex flex-col justify-center  items-center gap-4 py-16 h-[250px] lg:h-[90vh] relative -z-40'
+      className='flex flex-col justify-center  items-center gap-4 py-16 h-[250px] lg:h-[75vh] relative '
     >
-
-      <p className='text-center text-2xl lg:text-6xl font-semibold leading-6'>
+      <img
+        src={logoAbc}
+        className={"block lg:hidden w-[60px] absolute top-3"}
+        alt="logo"
+      />
+      <p className='text-center text-2xl lg:text-7xl font-semibold leading-6'>
         &#161;Estamos listos para{' '}
-        <span className='block text-4xl lg:text-8xl font-black'>retar tus ideas&#33;</span>
+        <span className='block text-4xl lg:text-9xl font-black'>retar tus ideas&#33;</span>
       </p>
       <Box
         sx={style?.divider}
@@ -20,7 +24,7 @@ function CompanyComponent() {
       <img
         src={spaceImage}
         alt='space'
-        className='absolute bottom-[-15px] right-[0px] w-[180px] rotate-180 z-20 opacity-70 lg:w-[400px] lg:bottom-[-50px] lg:right-[30vw] '
+        className='absolute bottom-[-15px] right-[0px] w-[180px] rotate-180 z-40 opacity-70 lg:w-[500px] lg:bottom-[-130px] lg:right-[250px] lg:z-40'
         />
     </Box>
   );

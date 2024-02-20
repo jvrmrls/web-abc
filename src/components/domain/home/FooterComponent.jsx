@@ -5,22 +5,26 @@ function FooterComponent() {
   return (
     <Box
       sx={style.container}
-      className='flex flex-col justify-center gap-2  items-center py-6  min-h-[220px] w-full lg:min-h-[550px]'
+      className='flex flex-col justify-center gap-2  items-center py-6  min-h-[220px] w-full lg:min-h-[450px]'
     >
-      <p className='text-sm text-center leading-3 w-[140px] lg:w-[500px] lg:text-2xl'>
-        Somos los locos que creen que pueden{' '}
-        <span className='block font-black text-xl  lg:text-6xl'>retar el mundo</span>
-      </p>
-      <img src={redesImage} alt='redes' className='w-1/4 max-w-[250px]' />
+      <Box className={"lg:text-center"}>
+        <p
+          className="text-base font-medium text-center leading-none w-[180px] lg:w-[60%] mx-auto lg:text-5xl">
+          Somos los locos que creen que pueden{' '}
+        </p>
+        <span
+          className="block font-black text-3xl  lg:text-8xl">retar al mundo</span>
+      </Box>
+      <img src={redesImage} alt="redes" className="w-1/3 max-w-[200px]" />
 
       <Box
         sx={style?.divider}
       />
-      <Box className={"w-full text-center flex flex-col gap-0 font-normal"}>
-        <p className={'text-xs m-0 p-0 lg:text-base'}>
+      <Box className={'w-full text-center flex flex-col gap-0 font-normal'}>
+        <p className={'text-sm m-0 p-0 lg:text-base'}>
           San Miguel, El Salvador.
         </p>
-        <span className={'text-[9px] m-0 p-0 font-light lg:text-base'}>
+        <span className={'text-xs m-0 p-0 font-normal lg:text-base'}>
         &#169; copyrigth {new Date().getFullYear()} - <span
           className={''}>ABC Marketing Digital</span>
       </span>

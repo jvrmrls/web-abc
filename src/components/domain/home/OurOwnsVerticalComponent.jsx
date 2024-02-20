@@ -7,7 +7,7 @@ function OurOwnsVerticalComponent() {
       <Box
         sx={style.containerSmallText}
         id={"Nuestro Trabajo"}
-        className='flex flex-col justify-center items-center relative lg:min-h-[20vh]'
+        className='flex flex-col justify-center items-center relative min-h-[120px] lg:min-h-[20vh]'
       >
         <p className='text-center text-lg font-semibold lg:text-2xl'>
           Conoce nuestro{' '}
@@ -18,7 +18,7 @@ function OurOwnsVerticalComponent() {
         <img
           src={spaceImage}
           alt="space"
-          className="absolute bottom-[-80px] left-[-80px] w-[250px]  z-10 opacity-70 lg:w-[400px] lg:bottom-[-120px] lg:left-[250px]"
+          className="absolute bottom-[-130px] left-[-120px] w-[400px]  z-10 opacity-70 lg:w-[700px] lg:bottom-[-220px] lg:left-[350px]"
         />
       </Box>
       <Box

@@ -30,7 +30,7 @@ function ServicesComponent() {
 
         </Box>
       </Box>
-      <Box sx={style.button} className="font-black  text-3xl">
+      <Box sx={style.button} className="font-black  text-3xl lg:text-4xl">
         &#161;Cotiza hoy&#33;
       </Box>
     </Box>
