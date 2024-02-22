@@ -1,32 +1,33 @@
 import Box from '@mui/material/Box';
 import { useEffect, useState, Suspense, lazy } from 'react';
-import Logo1 from '#/assets/logos/1.png';
-import Logo2 from '#/assets/logos/2.png';
-import Logo3 from '#/assets/logos/3.png';
-import Logo4 from '#/assets/logos/4.png';
-import Logo5 from '#/assets/logos/5.png';
-import Logo6 from '#/assets/logos/6.png';
-import Logo7 from '#/assets/logos/7.png';
-import Logo8 from '#/assets/logos/8.png';
-import Logo9 from '#/assets/logos/9.png';
-import Logo10 from '#/assets/logos/10.png';
-import Logo11 from '#/assets/logos/11.png';
-import Logo12 from '#/assets/logos/12.png';
-import Logo13 from '#/assets/logos/13.png';
-import Logo14 from '#/assets/logos/14.png';
-import Logo15 from '#/assets/logos/15.png';
-import Logo16 from '#/assets/logos/16.png';
-import Logo17 from '#/assets/logos/17.png';
-import Logo18 from '#/assets/logos/18.png';
-import Logo19 from '#/assets/logos/19.png';
-import Logo20 from '#/assets/logos/20.png';
-import Logo21 from '#/assets/logos/21.png';
-import Logo22 from '#/assets/logos/22.png';
-import Logo23 from '#/assets/logos/23.png';
 import { AnimatePresence, motion } from 'framer-motion';
 
+const logos = [
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221201429_abc-client-logo-1.png.png",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221201558_abc-client-logo-2.png.png",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221201734_abc-client-logo-3.png.3",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221201813_abc-client-logo-4.png.4",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221201852_abc-client-logo-5.png.5",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221202138_abc-client-logo-6.png.6",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221202222_abc-client-logo-7.png.7",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221202341_abc-client-logo-8.",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221202428_abc-client-logo-9.png.",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221203157_abc-client-logo-9.png",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221203249_abc-client-logo-11.png",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221203310_abc-client-logo-12.png",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221203326_abc-client-logo-13.png",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221203344_abc-client-logo-14.png",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221203403_abc-client-logo-15.png",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221203428_abc-client-logo-16.png",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221203444_abc-client-logo-17.png",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221203500_abc-client-logo-18.png",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221203514_abc-client-logo-19.png",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221203525_abc-client-logo-19.png",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221203542_abc-client-logo-21.png",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221203556_abc-client-logo-22.png",
+  "https://s3.us-east-2.amazonaws.com/mome.cloud/20240221203615_abc-client-logo-23.png"
+]
 
-const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo6, Logo7, Logo8, Logo9, Logo10, Logo11, Logo12, Logo13, Logo14, Logo15, Logo16, Logo17, Logo18, Logo19, Logo20, Logo21, Logo22, Logo23];
 const logosPerPage = 6;
 
 function ClientsComponent() {
@@ -84,6 +85,7 @@ function ClientsComponent() {
              initial={{ opacity: 0 }}
              animate={{ opacity: 1 }}
              exit={{ opacity: 0 }}
+             loading={'lazy'}
            />
          ))}
       </Box>
