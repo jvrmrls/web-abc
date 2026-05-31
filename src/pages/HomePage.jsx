@@ -10,10 +10,10 @@ import ServicesComponent from '#/components/domain/home/ServicesComponent.jsx';
 import TeamComponent from '#/components/domain/home/TeamComponent.jsx';
 import ClientsComponent from '#/components/domain/home/ClientsComponent.jsx';
 import FooterComponent from '#/components/domain/home/FooterComponent.jsx';
-import MissionVissionComponent
-  from '#/components/domain/home/MissionVissionComponent.jsx';
-import TopBarDesktopContainer
-  from '#/components/domain/home/others/TopBarDesktopContainer.jsx';
+import MissionVissionComponent from '#/components/domain/home/MissionVissionComponent.jsx';
+import TopBarDesktopContainer from '#/components/domain/home/others/TopBarDesktopContainer.jsx';
+import V2GeneralComponent from '#/components/domain/home/V2GeneralComponent.jsx';
+import TermsAndConditions from '#/components/domain/home/TermsAndConditions';
 
 const HomePage = () => {
   // const ui = useUIState();
@@ -24,25 +24,27 @@ const HomePage = () => {
 
   return (
     <Container sx={style.container}>
-      <TopBarDesktopContainer />
+      {/* <TopBarDesktopContainer /> */}
       <CompanyComponent />
       <SloganComponent />
       <MissionVissionComponent />
-      <OurOwnsVerticalComponent />
+      {/* <OurOwnsVerticalComponent /> */}
       {/*<OurOwnsGridComponent />*/}
-      <MeetComponent />
+      {/* <MeetComponent /> */}
       <ServicesComponent />
-      <ClientsComponent />
+      {/* <ClientsComponent /> */}
       <TeamComponent />
+      <TermsAndConditions />
       <FooterComponent />
+      {/* <V2GeneralComponent /> */}
     </Container>
   );
 };
 
 const style = {
   container: {
-    width: '100%',
-    zIndex: -50
+    width: '100%'
+    // zIndex: -50
   }
 };
 

@@ -31,6 +31,11 @@ body {
   color: #222936 !important;
 }
 
+body{
+  /* font-family: 'Lato', sans-serif; */
+      
+}
+
 footer {
   /* position: fixed; */
   /* bottom: 0;
@@ -48,4 +53,11 @@ footer {
   footer {
     /* position: relative; */
   }
+}
+
+
+/* v2 ------------------------ */
+.gradient-bg {
+  
+min-height: 1000vh;
 }

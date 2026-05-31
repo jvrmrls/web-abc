@@ -4,36 +4,95 @@ import flechaImage from '#/assets/╓CONO-FLECHA2.png';
 
 function ServicesComponent() {
   return (
-    <Box
-      sx={style.container}
-      id={"Servicios"}
-      className="flex flex-col justify-between  items-center gap-8 py-8 aspect-square w-full h-[50vh] min-h-[400px] max-h-[600px] lg:h-[80vh] lg:min-h-[700px] lg:max-h-[900px]"
-    >
-      <p
-        className="text-center text-2xl lg:text-2xl font-medium leading-8 text-white ">
-        Conoce nuestros{' '}
-        <span
-          className="block font-black text-4xl leading-6 uppercase lg:text-6xl">
-          servicios
-        </span>
-      </p>
-      <Box className={"w-full flex items-center justify-center h-full"}>
-        <Box
-          sx={{ backgroundColor: '#ffe9d7', aspectRatio: '2/3' }}
-          className={'h-[100%] rounded-2xl relative flex justify-center items-center'}
-        >
-          <img src={flechaImage}
-               className={'w-[32px] h-[32px] absolute left-[-48px]  lg:w-[64px] lg:h-[64px] lg:left-[-100px]'} />
+    <>
+      {/* <Box
+        sx={style.container}
+        id={'Servicios'}
+        className='flex flex-col justify-between  items-center gap-8 py-8 aspect-square w-full h-[50vh] min-h-[400px] max-h-[600px] lg:h-[80vh] lg:min-h-[700px] lg:max-h-[900px]'
+      >
+        <p className='text-center text-2xl lg:text-2xl font-medium leading-8 text-white '>
+          Conoce nuestros{' '}
+          <span className='block font-black text-4xl leading-6 uppercase lg:text-6xl'>
+            servicios
+          </span>
+        </p>
+        <Box className={'w-full flex items-center justify-center h-full'}>
+          <Box
+            sx={{ backgroundColor: '#ffe9d7', aspectRatio: '2/3' }}
+            className={
+              'h-[100%] rounded-2xl relative flex justify-center items-center'
+            }
+          >
+            <img
+              src={flechaImage}
+              className={
+                'w-[32px] h-[32px] absolute left-[-48px]  lg:w-[64px] lg:h-[64px] lg:left-[-100px]'
+              }
+            />
 
-          <img src={flechaImage}
-               className={'w-[32px] h-[32px] absolute right-[-48px] rotate-180  lg:w-[64px] lg:h-[64px]  lg:right-[-100px]'} />
-
+            <img
+              src={flechaImage}
+              className={
+                'w-[32px] h-[32px] absolute right-[-48px] rotate-180  lg:w-[64px] lg:h-[64px]  lg:right-[-100px]'
+              }
+            />
+          </Box>
+        </Box>
+        <Box sx={style.button} className='font-black  text-3xl lg:text-4xl'>
+          &#161;Cotiza hoy&#33;
+        </Box>
+      </Box> */}
+      <Box
+        sx={style.container}
+        className='flex flex-col justify-between  items-center gap-8 py-8 aspect-square w-full h-[40vh] min-h-[300px] max-h-[600px] lg:h-[55vh] lg:min-h-[500px] lg:max-h-[900px]'
+      >
+        <p className='text-center text-2xl lg:text-2xl font-medium leading-8 text-white '>
+          Conoce nuestros{' '}
+          <span className='block font-black text-4xl leading-6 uppercase lg:text-6xl'>
+            servicios
+          </span>
+        </p>
+        <Box className={'w-full flex items-center justify-center h-full'}>
+          <ul className='list-disc pl-5 space-y-2 text-sm lg:text-2xl text-white'>
+            <li>
+              <p className='font-medium'>
+                Grabaci&oacute;n y producci&oacute;n audiovisual <br />
+                <span className='text-xs font-light lg:text-sm'>
+                  (Incluye creaci&oacute;n de guiones para contenido)
+                </span>
+              </p>
+            </li>
+            <li>
+              <p className='font-medium'>
+                Fotograf&iacute;a y video para redes
+              </p>
+            </li>
+            <li>
+              <p className='font-medium'>
+                Dise&ntilde;o gr&aacute;fico y branding
+              </p>
+            </li>
+            <li>
+              <p className='font-medium'>
+                Manejo de redes sociales
+                <br />
+                <span className='text-xs font-light lg:text-sm'>
+                  (Incluye calendario de contenido y guiones estratégicos)
+                </span>
+              </p>
+            </li>
+            <li>
+              <p className='font-medium'>Cobertura de eventos</p>
+            </li>
+            <li>
+              <p className='font-medium'>
+                Asesor&iacute;a creativa y estrat&eacute;gica
+              </p>
+            </li>
+          </ul>
         </Box>
       </Box>
-      <Box sx={style.button} className="font-black  text-3xl lg:text-4xl">
-        &#161;Cotiza hoy&#33;
-      </Box>
-    </Box>
+    </>
   );
 }
 
