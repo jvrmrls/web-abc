@@ -16,7 +16,7 @@ const TermsAndConditions = () => {
         </p>
         <ul className='list-disc pl-5 space-y-0 lg:space-y-4 text-xs lg:text-lg'>
           <li>
-            Todo servicio debe ser cancelado antes de inicios, salvo acuerdo
+            Todo servicio debe ser cancelado antes de iniciar, salvo acuerdo
             previo.
           </li>
           <li>Los servicios contratados no son acumulables mensualmente.</li>
@@ -24,7 +24,7 @@ const TermsAndConditions = () => {
             Todo contenido requiere aprobación previa antes de publicarse.
           </li>
           <li>
-            Atrasos por falta de información, aprobación, coordinación o pagos
+            Retrasos por falta de información, aprobación, coordinación o pagos
             por parte del cliente pueden afectar los tiempos de entrega y
             generar cargos adicionales.
           </li>
@@ -33,7 +33,7 @@ const TermsAndConditions = () => {
             tendrán un cargo adicional de $25.
           </li>
           <li>
-            No enviamos a tres individuales; previamente se aprueba la línea
+            No enviamos artes individuales; previamente se aprueba la línea
             gráfica del proyecto.
           </li>
           <li>

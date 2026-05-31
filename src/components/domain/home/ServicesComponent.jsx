@@ -44,7 +44,7 @@ function ServicesComponent() {
       </Box> */}
       <Box
         sx={style.container}
-        className='flex flex-col justify-between  items-center gap-8 py-8 aspect-square w-full h-[40vh] min-h-[300px] max-h-[600px] lg:h-[55vh] lg:min-h-[500px] lg:max-h-[900px]'
+        className='flex flex-col justify-between  items-center gap-8 py-8 aspect-square w-full h-[50vh] min-h-[400px] max-h-[600px] lg:h-[55vh] lg:min-h-[500px] lg:max-h-[900px]'
       >
         <p className='text-center text-2xl lg:text-2xl font-medium leading-8 text-white '>
           Conoce nuestros{' '}
