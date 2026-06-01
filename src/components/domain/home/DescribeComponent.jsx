@@ -47,7 +47,7 @@ const DescribeComponent = () => {
       <img
         src={Image15}
         alt='Decorative'
-        className='absolute h-[230px] lg:h-[340px] bottom-[-70px] z-[200] left-[40px] lg:bottom-[-100px] lg:left-[290px]'
+        className='absolute h-[230px] lg:h-[340px] bottom-[-70px] z-[200] left-[20px] lg:bottom-[-100px] lg:left-[290px]'
       />
     </Box>
   );

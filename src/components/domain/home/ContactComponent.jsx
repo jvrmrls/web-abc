@@ -25,10 +25,25 @@ const ContactComponent = () => {
   };
 
   const fields = [
-    { label: 'Nombre', name: 'nombre', multiline: false },
-    { label: 'Negocio', name: 'negocio', multiline: false },
-    { label: 'Departamento', name: 'departamento', multiline: false },
-    { label: 'Teléfono', name: 'telefono', multiline: false },
+    { label: 'Nombre', name: 'nombre', multiline: false, autoComplete: 'name' },
+    {
+      label: 'Negocio',
+      name: 'negocio',
+      multiline: false,
+      autoComplete: 'organization'
+    },
+    {
+      label: 'Departamento',
+      name: 'departamento',
+      multiline: false,
+      autoComplete: 'department'
+    },
+    {
+      label: 'Teléfono',
+      name: 'telefono',
+      multiline: false,
+      autoComplete: 'tel'
+    },
     { label: 'Cuéntanos', name: 'cuentanos', multiline: true }
   ];
 
@@ -49,7 +64,7 @@ const ContactComponent = () => {
         }}
         className='max-w-[400px] lg:max-w-[600px] '
       >
-        {fields.map(({ label, name, multiline }) => (
+        {fields.map(({ label, name, multiline, autoComplete }) => (
           <Box
             key={name}
             sx={{
@@ -68,6 +83,7 @@ const ContactComponent = () => {
               multiline={multiline}
               rows={multiline ? 3 : 1}
               size='small'
+              autoComplete={autoComplete}
               fullWidth
               sx={{
                 '& .MuiOutlinedInput-root': {

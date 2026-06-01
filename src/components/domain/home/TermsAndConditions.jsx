@@ -4,7 +4,7 @@ const TermsAndConditions = () => {
   return (
     <Box
       sx={style.container}
-      className='w-full flex justify-center items-center py-16 lg:py-24 h-[400px] lg:h-[700px] '
+      className='w-full flex justify-center items-center py-16 lg:py-24 h-[500px] lg:h-[700px] '
     >
       <Box
         className={
