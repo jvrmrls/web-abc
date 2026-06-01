@@ -1,18 +1,25 @@
-import { Box, Button } from '@mui/material';
-import { Outlet } from 'react-router-dom';
+import DynamicImport from '#/utils/DynamicImport.jsx';
 
-export default function LayoutPage() {
+const LayoutPage = () => {
+  const HomePage = () => (
+    <DynamicImport load={() => import('#/pages/HomePage.jsx')}>
+      {Component => (Component === null ? <></> : <Component />)}
+    </DynamicImport>
+  );
+
   return (
     <>
-      {/* <Box component="header" sx={{ flexGrow: 1 }}>
-        <Box sx={{ flexGrow: 1 }}>
-          <Button color="inherit">Home</Button>
-          <Button color="inherit">Login</Button>
-        </Box>
-      </Box> */}
-      {/* <Box component="main" sx={{ flexGrow: 1 }}> */}
-      <Outlet />
-      {/* </Box> */}
+      <main style={style.main}>
+        <HomePage />
+      </main>
     </>
   );
-}
+};
+
+const style = {
+  main: {
+    overflow: 'hidden',
+  }
+};
+
+export default LayoutPage;

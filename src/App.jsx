@@ -1,9 +1,16 @@
-import { useState } from 'react';
-import Button from '@mui/material/Button';
-import RouterRoutes from '#/router/RouterRoutes.jsx';
+import DynamicImport from '#/utils/DynamicImport.jsx';
 
 function App() {
-  return <RouterRoutes />;
+  const LayoutPage = () => (
+    <DynamicImport load={() => import('#/pages/LayoutPage.jsx')}>
+      {Component => (Component === null ? <></> : <Component />)}
+    </DynamicImport>
+  );
+  return (
+    <>
+      <LayoutPage />
+    </>
+  );
 }
 
 export default App;
