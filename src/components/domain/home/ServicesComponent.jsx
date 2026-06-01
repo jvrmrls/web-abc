@@ -1,6 +1,5 @@
 import Box from '@mui/material/Box';
 import fondo9 from '#/assets/FONDO-9.webp';
-import flechaImage from '#/assets/╓CONO-FLECHA2.png';
 
 function ServicesComponent() {
   return (

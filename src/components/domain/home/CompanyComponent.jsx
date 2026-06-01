@@ -1,12 +1,11 @@
 import Box from '@mui/material/Box';
 import spaceImage from '#/assets/╓CONO.png';
-import TopBarDesktopContainer from '#/components/domain/home/others/TopBarDesktopContainer.jsx';
 import logoAbc from '#/assets/LOGO-ABC.png';
 function CompanyComponent() {
   return (
     <Box
       sx={style.container}
-      className='flex flex-col justify-center  items-center gap-4 py-16 h-[250px] lg:h-[75vh] relative '
+      className='flex flex-col justify-center  items-center gap-4 py-16 h-[250px] lg:h-[800px] relative '
     >
       <img
         src={logoAbc}

@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import Image8 from '#/assets/v2/8.png';
+import Image8 from '#/assets/v2/8.webp';
 
 const FooterComponentV2 = () => {
   return (

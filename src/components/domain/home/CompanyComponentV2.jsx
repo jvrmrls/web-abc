@@ -1,16 +1,20 @@
 import { Box } from '@mui/material';
-import LogoAbc from '#/assets/v2/LOGO-ABC-2025-AZUL.png';
-import Image2 from '#/assets/v2/2.png';
-import Image1 from '#/assets/v2/1.png';
-import Image15 from '#/assets/v2/15.png';
+import LogoAbc from '#/assets/v2/LOGO-ABC-2025-CREMA.webp';
+import Image2 from '#/assets/v2/2.webp';
+import Image1 from '#/assets/v2/1.webp';
+import Image15 from '#/assets/v2/15.webp';
 
 const CompanyComponentV2 = () => {
   return (
     <Box
       sx={style.container}
-      className='flex flex-col justify-start relative items-center gap-1 py-2 aspect-square w-full h-[300px] lg:h-[90vh] lg:min-h-[500px] -z-30'
+      className='flex flex-col justify-start relative items-center gap-1 py-2 aspect-square w-full h-[300px] md:h-[350px] lg:h-[700px] -z-30'
     >
-      <img src={LogoAbc} alt='Logo ABC' className='w-[80px] lg:w-[200px]' />
+      <img
+        src={LogoAbc}
+        alt='Logo ABC'
+        className='w-[80px] md:w-[100px] lg:w-[170px]'
+      />
       <Box className='relative'>
         <img
           src={Image2}

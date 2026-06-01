@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import AttachedWord from '#/components/shared/AttachedWord';
-import Image9 from '#/assets/v2/9.png';
-import Image15 from '#/assets/v2/15.png';
+import Image9 from '#/assets/v2/9.webp';
+import Image15 from '#/assets/v2/15.webp';
 
 const DescribeComponent = () => {
   return (
@@ -44,11 +44,11 @@ const DescribeComponent = () => {
         </p>
       </Box>
 
-      <img
+      {/* <img
         src={Image15}
         alt='Decorative'
-        className='absolute h-[230px] lg:h-[340px] bottom-[-70px] z-[200] left-[20px] lg:bottom-[-100px] lg:left-[290px]'
-      />
+        className='absolute h-[230px] lg:h-[340px] bottom-[-70px] z-[200] left-[1%] lg:bottom-[-100px] lg:left-[10%] opacity-25'
+      /> */}
     </Box>
   );
 };
