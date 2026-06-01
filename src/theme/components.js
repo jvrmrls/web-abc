@@ -150,7 +150,7 @@ const components = {
         padding: '0px',
         maxWidth: '100%',
         '&.MuiContainer-maxWidthLg': {
-          maxWidth: '100%',
+          maxWidth: '1200px',
           padding: '0px'
         }
       }

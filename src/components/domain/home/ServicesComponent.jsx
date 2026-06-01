@@ -44,50 +44,50 @@ function ServicesComponent() {
       </Box> */}
       <Box
         sx={style.container}
-        className='flex flex-col justify-between  items-center gap-8 py-8 aspect-square w-full h-[50vh] min-h-[400px] max-h-[600px] lg:h-[55vh] lg:min-h-[500px] lg:max-h-[900px]'
+        className='flex flex-col justify-between  items-center gap-8 lg:gap-0 py-8 lg:py-16 aspect-square w-full h-[400px]  lg:h-[700px] -z-40'
       >
-        <p className='text-center text-2xl lg:text-2xl font-medium leading-8 text-white '>
+        <h2 className='text-center text-2xl lg:text-5xl font-medium leading-8 text-white '>
           Conoce nuestros{' '}
-          <span className='block font-black text-4xl leading-6 uppercase lg:text-6xl'>
+          <span className='block font-black text-4xl leading-6 uppercase lg:text-8xl'>
             servicios
           </span>
-        </p>
+        </h2>
         <Box className={'w-full flex items-center justify-center h-full'}>
-          <ul className='list-disc pl-5 space-y-2 text-sm lg:text-2xl text-white'>
+          <ul className='list-disc pl-5 space-y-2 text-sm lg:text-3xl text-white'>
             <li>
-              <p className='font-medium'>
+              <h4 className='font-medium'>
                 Grabaci&oacute;n y producci&oacute;n audiovisual <br />
                 <span className='text-xs font-light lg:text-sm'>
                   (Incluye creaci&oacute;n de guiones para contenido)
                 </span>
-              </p>
+              </h4>
             </li>
             <li>
-              <p className='font-medium'>
+              <h4 className='font-medium'>
                 Fotograf&iacute;a y video para redes
-              </p>
+              </h4>
             </li>
             <li>
-              <p className='font-medium'>
+              <h4 className='font-medium'>
                 Dise&ntilde;o gr&aacute;fico y branding
-              </p>
+              </h4>
             </li>
             <li>
-              <p className='font-medium'>
+              <h4 className='font-medium'>
                 Manejo de redes sociales
                 <br />
                 <span className='text-xs font-light lg:text-sm'>
                   (Incluye calendario de contenido y guiones estratégicos)
                 </span>
-              </p>
+              </h4>
             </li>
             <li>
-              <p className='font-medium'>Cobertura de eventos</p>
+              <h4 className='font-medium'>Cobertura de eventos</h4>
             </li>
             <li>
-              <p className='font-medium'>
+              <h4 className='font-medium'>
                 Asesor&iacute;a creativa y estrat&eacute;gica
-              </p>
+              </h4>
             </li>
           </ul>
         </Box>

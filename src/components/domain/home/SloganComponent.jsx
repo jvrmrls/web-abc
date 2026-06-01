@@ -1,42 +1,53 @@
 import Box from '@mui/material/Box';
 import AttachedWord from '#/components/shared/AttachedWord';
 import comillasImage from '#/assets/comillas.png';
+import Image12 from '#/assets/v2/12.png';
 
 function SloganComponent() {
   return (
     <Box
       sx={style.container}
-      id={"Conócenos"}
-      className="flex flex-col justify-center  items-center gap-10 py-12 h-max w-full lg:min-h-[500px] relative -z-30"
+      id={'Conócenos'}
+      className='flex flex-col justify-center  items-center gap-10 py-12 h-max w-full lg:min-h-[500px] relative -z-30'
     >
-      <img src={comillasImage} alt="comillas"
-           className="absolute w-[500px] top-[-60px] left-[-135px] lg:left-[350px] xl:left-[340px] lg:w-[750px] lg:top-[-100px]" />
-      <img src={comillasImage} alt="comillas"
-           className="absolute  w-[500px]  bottom-[-100px] right-[-135px] -z-20 rotate-180 lg:right-[240px] xl:right-[300px] lg:w-[750px] lg:bottom-[-150px]" />
-      <p className="text-center text-3xl lg:text-6xl font-black leading-3 mt-2 z-20">
+      <img
+        src={Image12}
+        alt='comillas'
+        className='absolute w-[300px] top-[-40px] left-[-80px] lg:left-[150px] rotate-180  lg:w-[450px] lg:top-[-100px] opacity-15'
+      />
+      <img
+        src={Image12}
+        alt='comillas'
+        className='absolute  w-[300px]  bottom-[-60px] right-[-65px] -z-20  lg:right-[100px] lg:w-[450px] lg:bottom-[-100px] opacity-15'
+      />
+      <h2 className='text-center text-3xl lg:text-6xl font-black leading-3 mt-2 z-20'>
         &#161;Con&oacute;cenos!
-      </p>
+      </h2>
 
-      <Box className=" flex flex-col gap-4 w-2/3 lg:w-[550px]">
-        <p className="text-sm font-semibold lg:text-2xl leading-4 z-20 lg:font-bold  ">
-          A lo largo de este tiempo, hemos trabajado con clientes en diversos
-          sectores y hemos tenido la oportunidad de participar en proyectos
-          desafiantes.
-        </p>
+      <Box className=' flex flex-col gap-4 w-2/3 lg:w-[550px]'>
+        <h4 className='text-sm font-regular lg:text-2xl leading-4 z-20 lg:font-bold  '>
+          A lo largo de este tiempo,{' '}
+          <span className='font-bold '>
+            hemos trabajado con clientes en diversos sectores
+          </span>{' '}
+          y hemos tenido la oportunidad de participar en proyectos desafiantes.
+        </h4>
 
-        <p className="text-sm font-semibold lg:text-2xl leading-4 z-20 lg:font-bold ">
-          El arte siempre ha estado presente, por eso al combinar la{' '}
-          <AttachedWord>fotograf&iacute;a</AttachedWord> con el{' '}
-          <AttachedWord>dise&ntilde;o</AttachedWord> y el{' '}
-          <AttachedWord>marketing</AttachedWord> hemos logrado ampliar nuestra
-          perspectiva creativa.
-        </p>
+        <h4 className='text-sm font-regular lg:text-2xl leading-4 z-20 lg:font-bold  '>
+          El arte siempre ha estado presente, por eso al combinar{' '}
+          <span className='font-bold '>
+            la fotograf&iacute;a con el dise&ntilde;o y el marketing
+          </span>{' '}
+          hemos logrado ampliar nuestra perspectiva creativa.
+        </h4>
 
-        <p className="text-sm font-semibold lg:text-2xl leading-4 z-20 lg:font-bold ">
-          Trabajamos con negocios que busquen{' '}
-          <AttachedWord> una experiencia visual &uacute;nica</AttachedWord> que
-          eleve su propuesta de valor.
-        </p>
+        <h4 className='text-sm font-regular lg:text-2xl leading-4 z-20 lg:font-bold '>
+          Trabajamos con negocios que{' '}
+          <span className='font-bold '>
+            busquen una experiencia visual &uacute;nica
+          </span>{' '}
+          que eleve su propuesta de valor.
+        </h4>
       </Box>
     </Box>
   );

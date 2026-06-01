@@ -4,17 +4,17 @@ const TermsAndConditions = () => {
   return (
     <Box
       sx={style.container}
-      className='w-full flex justify-center items-center py-16 lg:py-24 h-[40vh] min-h-[400px] max-h-[600px] lg:h-[65vh] lg:min-h-[500px] lg:max-h-[900px]'
+      className='w-full flex justify-center items-center py-16 lg:py-24 h-[400px] lg:h-[700px] '
     >
       <Box
         className={
-          ' flex flex-col font-normal  mx-auto w-[80%] lg:w-[50%] gap-4 lg:gap-8'
+          ' flex flex-col font-normal  mx-auto w-[80%] lg:w-[70%] gap-4 lg:gap-8 rounded-lg p-4 lg:p-8 bg-[#222936] text-[#ffe9d7] shadow-lg shadow-black/50'
         }
       >
-        <p className=' font-bold text-2xl mb-2 lg:text-5xl text-center'>
+        <p className=' font-black text-md mb-2 lg:text-2xl '>
           Términos y condiciones
         </p>
-        <ul className='list-disc pl-5 space-y-0 lg:space-y-4 text-xs lg:text-lg'>
+        <ul className='list-disc pl-5 space-y-0 lg:space-y-2 text-xs lg:text-lg'>
           <li>
             Todo servicio debe ser cancelado antes de iniciar, salvo acuerdo
             previo.

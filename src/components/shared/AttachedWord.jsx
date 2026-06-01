@@ -1,13 +1,25 @@
-function AttachedWord({ children, bgcolor = "#ffbe37", color = null }) {
+import { Box } from '@mui/material';
+
+function AttachedWord({
+  children,
+  bgcolor = '#ffbe37',
+  color = null,
+  component = 'span',
+  ...props
+}) {
   return (
-    <span className='' style={{
-      backgroundColor: bgcolor,
-      color: color || 'auto'
-    }}>
+    <Box
+      className=''
+      style={{
+        backgroundColor: bgcolor,
+        color: color || 'auto'
+      }}
+      component={component}
+      {...props}
+    >
       {children}
-    </span>
+    </Box>
   );
 }
-
 
 export default AttachedWord;

@@ -14,6 +14,12 @@ import MissionVissionComponent from '#/components/domain/home/MissionVissionComp
 import TopBarDesktopContainer from '#/components/domain/home/others/TopBarDesktopContainer.jsx';
 import V2GeneralComponent from '#/components/domain/home/V2GeneralComponent.jsx';
 import TermsAndConditions from '#/components/domain/home/TermsAndConditions';
+import CompanyComponentV2 from '#/components/domain/home/CompanyComponentV2.jsx';
+import CityComponentV2 from '#/components/domain/home/CityComponentV2.jsx';
+import DescribeComponent from '#/components/domain/home/DescribeComponent.jsx';
+import ContactComponent from '#/components/domain/home/ContactComponent.jsx';
+import WhatsappAndQR from '#/components/domain/home/WhatsappAndQR.jsx';
+import FooterComponentV2 from '#/components/domain/home/FooterComponentV2.jsx';
 
 const HomePage = () => {
   // const ui = useUIState();
@@ -23,28 +29,34 @@ const HomePage = () => {
   // }, []);
 
   return (
-    <Container sx={style.container}>
+    <Container sx={style.container} className='relative max-w-[1200px]'>
+      <CompanyComponentV2 />
+      <CityComponentV2 />
       {/* <TopBarDesktopContainer /> */}
-      <CompanyComponent />
+      {/* <CompanyComponent /> */}
       <SloganComponent />
-      <MissionVissionComponent />
+      <DescribeComponent />
+      {/* <MissionVissionComponent /> */}
       {/* <OurOwnsVerticalComponent /> */}
       {/*<OurOwnsGridComponent />*/}
       {/* <MeetComponent /> */}
       <ServicesComponent />
+      <ContactComponent />
+      <WhatsappAndQR />
       {/* <ClientsComponent /> */}
-      <TeamComponent />
+      {/* <TeamComponent /> */}
       <TermsAndConditions />
-      <FooterComponent />
-      {/* <V2GeneralComponent /> */}
+      {/* <FooterComponent />/ */}
+      <FooterComponentV2 />
     </Container>
   );
 };
 
 const style = {
   container: {
-    width: '100%'
-    // zIndex: -50
+    width: '100%',
+    position: 'relative',
+    overflow: 'hidden'
   }
 };
 
